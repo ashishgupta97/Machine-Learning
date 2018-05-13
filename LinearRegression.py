@@ -91,30 +91,3 @@ theta_0_plot, theta_1_plot=np.meshgrid(theta_0_plot, theta_1_plot)
 J_plot=np.vectorize(createJ_plot)(theta_0_plot, theta_1_plot)
 ax.plot_surface(theta_0_plot, theta_1_plot, J_plot, cmap=plt.cm.jet, rstride=1, cstride=1, linewidth=0)
 plt.show()
-#for i in range(0, num_iter):
-#	A.append(saved_theta[i][0])
-#	B.append(saved_theta[i][1])
-#	C.append(cost[i])
-	#ax.plot(A, B, C)
-	
-	#ax.scatter(saved_theta[i][0], saved_theta[i][1])	
-	#plt.pause(0.02)
-#plt.show()
-#part d
-#Plot the contour
-#contour=plt.figure()
-#CS=plt.contour(theta_0_plot, theta_1_plot, J_plot)
-#A=[] 
-#B=[]
-
-#plt.show()
-#saved_theta=saved_theta.T
-#print(saved_theta)
-#for line in saved_theta:
-	# Plot the new wireframe and pause briefly before continuing
-#	A.append(line[0]); B.append(line[1]); 
-#	point = plt.plot([line[0]],[line[1]], 'ro')
-#	point = plt.plot(A, B)
-#	plt.pause(0.0002)
-
-#plt.show()
